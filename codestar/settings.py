@@ -27,11 +27,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-1xdiuahbnxz9&34&i+okp8e68*d&dehd1uhv#%cheg-n!&zpcx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = 'False'
 
 ALLOWED_HOSTS = [
-    '8000-ahebbes-weblogproject-qyar83txe2a.ws-eu114.gitpod.io',
-    '.herokuapp.com',  # Notice the dot before herokuapp.com for wildcard subdomains
+    "8000-ahebbes-weblogproject-qyar83txe2a.ws-eu114.gitpod.io",
+    ".herokuapp.com",
 ]
 
 
@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 #}
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': dj_database_url.parse(os.environ.get("postgres://u0gnqkgjbqt:vR25BrW98uGb@ep-gentle-mountain-a23bxz6h.eu-central-1.aws.neon.tech/virus_jumbo_wreck_221608"))
 }
 
 # Password validation
