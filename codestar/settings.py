@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 #}
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("postgres://u0gnqkgjbqt:vR25BrW98uGb@ep-gentle-mountain-a23bxz6h.eu-central-1.aws.neon.tech/virus_jumbo_wreck_221608"))
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
 # Password validation
